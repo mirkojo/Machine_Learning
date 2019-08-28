@@ -1,0 +1,24 @@
+<html>
+  <head>
+    <!-- Load the latest version of TensorFlow.js -->
+    <script src="https://unpkg.com/@tensorflow/tfjs"></script>
+    <script src="https://unpkg.com/@tensorflow-models/mobilenet"></script>
+    <script src="https://unpkg.com/@tensorflow-models/knn-classifier"></script>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css" media="screen" />
+  </head>
+  <body>
+    <h1>Image Classifier</h1>
+    <p>Hold an item to the camera and assign it a class by clicking the one of the class buttons below the picture.</p>
+    <p><i><center>NOTE: The more times you assign the item to the same class, the higher the prediction rate.</center></i></p>
+    <p>After assigning 4 items, hold one of the items to the camera to see the prediction the model has guessed.</p>
+    <div id="console"></div>
+    <!-- Add an image that we will use to test -->
+    <video autoplay playsinline muted id="webcam" width="224" height="224"></video>
+    <button id="class-a">Class A</button>
+    <button id="class-b">Class B</button>
+    <button id="class-c">Class C</button>
+    <button id="class-d">Class D</button>
+    <!-- Load index.js after the content of the page -->
+    <script src="index.js"></script>
+  </body>
+</html>
