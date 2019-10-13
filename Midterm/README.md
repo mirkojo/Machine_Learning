@@ -1,3 +1,3 @@
-Sign-up Form
-Paywall
-Stock Market Machine Learning
+1. Sign-up Form
+2. Paywall
+3. Stock Market Machine Learning
